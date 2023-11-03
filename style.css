@@ -1,0 +1,599 @@
+ *
+ {
+  margin: 0;
+  padding: 0;
+  font-family: Monospace;
+ }
+ .homeContainer
+ {
+  height: 100vh;
+  width: 100%;
+  background: #181825;
+ backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 10px rgb(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  visibility: ;
+ }
+ .gameName
+ {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 50px;
+ }
+ .userName
+ {
+  padding: 8px 10px;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 0px 20px rgb(0,0,0,0.5);
+ }
+ .soundContainer
+ {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+   
+  box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
+ color: #6e7888;
+ background: ;
+ }
+ .soundBox
+ {
+  padding: 5px;
+  background: ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+ }
+ #js
+ {
+  position: ;
+  z-index: 1;
+  opacity: ;
+  height: 30px;
+  width: 30px;
+ }
+ #sound
+ {
+ padding: 10px 15px;
+background-color: ;
+ box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
+ color: #6e7888;
+ font-size: 25px;
+ font-weight: bold;
+ border-radius: 5px;
+ display: block;
+ }
+ .muteBox
+ {
+  padding: 5px;
+  background: ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+ }
+ #jm
+ {
+  position: ;
+  z-index: 1;
+  opacity: ;
+  height: 30px;
+  width: 30px;
+ }
+ #mute
+ {
+ background: ;
+  padding: 10px 15px;
+ box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
+ color: #6e7888;
+ font-size: 25px;
+ font-weight: bold;
+ border-radius: 5px;
+ position: ;
+ display: none;
+ }
+ .maIn
+ {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: none;
+ }
+ .aMain
+ {
+  position: relative;
+ }
+ .game-container
+ {
+  height: 100vh;
+  width: 100%;
+  background: #181825;
+  position: relative;
+ }
+#snake 
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px white;
+    display: flex;
+}
+.snakeName
+{
+  text-align: center;
+  color: #fca311;
+  font-weight: bold;
+  font-size: 12px;
+  z-index: 1;
+  margin-left: 20px;
+}
+.snakePoint
+{
+ transition:  1s;
+ color: #fca311;
+ opacity: 0;
+}
+.eye
+{
+ transform: rotate();
+ width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+    top: 0;
+}
+.tail{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #bfffea;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #bfffea;
+}
+#food {
+    position: absolute;
+    bottom: ;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px yellow;
+}
+#postion
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px red;
+}
+#damage
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px blue;
+}
+.containerTwo
+{
+ height: 40vh;
+ width: 100%;
+ background: ;
+ position: absolute;
+ bottom: 0;
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+ align-items: center;
+}
+.score-wrap
+{
+ width: 100%;
+ background: ;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+.score
+{
+ font-size: 20px;
+ color: #6e7888;
+ padding: 5px;
+ font-weight: bold;
+}
+.highscore
+{
+ font-size: 20px;
+ color: #6e7888;
+ padding: 5px;
+ font-weight: bold;
+}
+.pause
+{
+ padding: 5px;
+ background: rgb(0,0,0,0.2);
+ backdrop-filter: blur(15px);
+ color: #6e7888;
+ font-size: 20px;
+ font-weight: bold;
+ border-radius: 5px;
+ position: absolute;
+ bottom: 5px;
+ right: 5px;
+}
+.controlContainer
+{
+ padding: 5px;
+ background: ;
+ position: relative;
+ display: grid;
+ grid-template-columns: auto auto;
+ align-items: center;
+ justify-content: center;
+ grid-row-gap: 20px;
+ grid-column-gap: 20px;
+ transform: rotate(45deg);
+ width: max-content;
+ margin-top: 20px;
+}
+.ctrl
+{
+ height: 40px;
+ width: 40px;
+ background: rgb(0,0,0,0.1);
+ backdrop-filter: blur(15px);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 5px;
+ font-size: 20px;
+}
+.up
+{
+ color: white;
+ transform: rotate(-45deg);
+}
+.start-btn
+{
+ padding: 10px 15px;
+ position: ;
+ bottom: 5px;
+ right: 5px;
+ box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
+ color: #6e7888;
+ font-size: 20px;
+ font-weight: bold;
+ border-radius: 5px;
+}
+.gameover-wrap
+{
+ height: 40vh;
+ width: 100%;
+ background: #222738;
+ position: absolute;
+ bottom: 0;
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+ align-items: center;
+ visibility: hidden;
+}
+.gameover
+{
+ padding: 5px;
+ color: white;
+ font-size: 30px;
+ font-weight: bold;
+ border-radius: 5px;
+ margin-top: 15px;
+ animation-name: gameover;
+ animation-duration: 6s;
+ animation-iteration-count: infinite;
+}
+@keyframes gameover {
+ 0%{
+  
+ }
+ 50%{
+  text-shadow: 0px 0px 10px white,0px 0px 20px white,0px 0px 30px white;
+ }
+ 100%{
+  
+ }
+}
+.gameover-score
+{
+ padding: 5px;
+ background: ;
+ text-shadow: ;
+ color: #6e7888;
+ font-size: 20px;
+ font-weight: bold;
+ border-radius: 5px;
+ margin-top: 10px;
+}
+.restart
+{
+ padding: 5px;
+ background: rgb(0,0,0,0.2);
+ color: #6e7888;
+ font-size: 20px;
+ font-weight: bold;
+ border-radius: 5px;
+}
+#storContainer
+{
+ height: 100vh;
+ width: 100%;
+ background: #181825;
+ backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 10px rgb(0,0,0,0.1);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.storHead
+{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ height: 40px;
+ background: ;
+}
+.storName
+{
+ color: white;
+ font-size: 20px;
+ font-weight: bold;
+}
+.closeStor
+{
+ color: #6e7888;
+ font-size: 18px;
+ font-weight: bold;
+}
+.eyeStor
+{
+ color: #6e7888;
+ font-size: 18px;
+ font-weight: bold;
+ margin-top: 10px;
+}
+.storBody
+{
+ height: 94vh;
+ width: 100%;
+ background: ;
+}
+.snakeStorcontainer
+{
+ height: 200px;
+ width: 97%;
+ background: ;
+ padding: 5px;
+ overflow: auto;
+ border-radius: 5px;
+}
+.snakeBox
+{
+ height: 195px;
+ width: 100%;
+ background: rgb(225,225,225,0.2);
+ backdrop-filter: blur(15px);
+ display: inline-flex;
+ margin-top: 5px;
+ border-radius: 5px;
+ align-items: center;
+ justify-content: center;
+ box-shadow: rgb(0,0,0,0.5);
+}
+.ss
+{
+ display: flex;
+ align-items: center;
+}
+.clickedSnakestyle
+{
+ height: 20px;
+ width: 20px;
+ position: absolute;
+ bottom: 10px;
+ right: 10px;
+ border: none;
+}
+.storSnake
+{
+ width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px white;
+    
+}
+.storSnakeb
+{
+ width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: ;
+    box-shadow: 0px 0px 20px white;
+}
+.storSnakec
+{
+ width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px white;
+}
+.snakeColorcontainer
+{
+ padding: ;
+ height: 40px;
+ width: 100%;
+ background: rgb(0,0,0,0.1);
+ backdrop-filter: blur(15px);
+ display: flex;
+ overflow-x: scroll;
+ align-items: center;
+  justify-content: space-around;
+ grid-template-columns: auto auto auto;
+ box-shadow: 0px 0px 20px rgb(0,0,0,0.1);
+ margin-top: 10px;
+}
+.colorBox
+{
+ height: 20px;
+ width: 20px;
+ 
+ border-radius: 5px;
+ box-shadow: 0px 0px 20px lightskyblue;
+ transition: 1s;
+}
+.colorBox:hover
+{
+  border: 2px solid white;
+}
+.colorradio
+{
+ height: 20px;
+ width: 20px;
+ opacity: 0;
+}
+.eyeContainer
+{
+ height: 40px;
+ width: 100%;
+ background: rgb(0,0,0,0.1);
+ backdrop-filter: blur(15px);
+ display: flex;
+ overflow-x: scroll;
+ align-items: center;
+  justify-content: space-around;
+ grid-template-columns: auto auto auto;
+ box-shadow: 0px 0px 20px rgb(0,0,0,0.1);
+ margin-top: 10px;
+}
+.eyeBox
+{
+ height: 20px;
+ width: 20px;
+ object-fit: cover;
+ border-radius: 5px;
+ transition: 1s;
+}
+.eyeBox:hover
+{
+  border: 2px solid white;
+}
+.eyeajStor
+{
+ height: 20px;
+ width: 20px;
+ border-radius: 5px;
+}
+
+#lightskybluej
+{
+ background-color: lightskyblue;
+ box-shadow: 0px 0px 20px lightskyblue;
+}
+#lightslategreyj
+{
+ background-color: lightslategrey;
+ box-shadow: 0px 0px 20px lightslategrey;
+}
+#royalbluej
+{
+ background-color: royalblue;
+ box-shadow: 0px 0px 20px royalblue;
+}
+#steelbluej
+{
+ background-color: steelblue;
+ box-shadow: 0px 0px 20px steelblue;
+}
+#tomatoj
+{
+background-color: tomato;
+box-shadow: 0px 0px 20px tomato;
+}
+#howtoPlay
+{
+ height: 100vh;
+ width: 100%;
+ position: absolute;
+ top: 0;
+ background: rgba(0,0,0,0.1);
+ backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 10px rgb(0,0,0,0.1);
+  display: none;
+}
+.hpHead
+{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ padding: 10px;
+}
+.hpTitle
+{
+ color: white;
+ font-weight: bold;
+}
+.infoBox
+{
+ padding: 5px;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ font-size: 18px;
+ font-weight: bold;
+}
+.hpColor
+{
+ height: 20px;
+ width: 20px;
+ background: yellow;
+ box-shadow: 0px 0px 20px yellow;
+ margin-left: -10px;
+}
+.hpColorb
+{
+ height: 20px;
+ width: 20px;
+ background: blue;
+ box-shadow: 0px 0px 20px blue;
+ margin-left: -6px;
+}
+.hpColorc
+{
+ height: 20px;
+ width: 20px;
+ background: red;
+ box-shadow: 0px 0px 20px red;
+}
