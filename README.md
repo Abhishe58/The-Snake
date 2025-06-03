@@ -3,7 +3,7 @@ Welcome to the Snake Game built using pure HTML, CSS, and JavaScript!
 This is not your classic snake – here, you are in control of how the game looks and feels.
 
 🧪 Live Demo
-🔗 
+🔗 https://abhishe58.github.io/The-Snake/
 
 🎮 Features
 ✅ Classic Snake Gameplay with smooth animations.
